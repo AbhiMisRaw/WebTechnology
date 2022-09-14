@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        *{
+            font-size: 24px;
+            font-family: 'Segoe UI', Tahoma,  sans-serif;
+
+        }
+         table  ,th , td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 60%;
+            height: 60%;
+        }
+        th {
+            background-color: rgb(174, 119, 225);
+        }
+       td {
+        background-color: #96D4D4;
+        }   
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;"> Normal Table </h2>
+    <table >
+        <thead>Team Members of Mini Project</thead>
+        <tr>
+            <th>RollNo</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Section</th>
+        </tr>
+        <tr>
+            <td>2100290140006</td>
+            <td>Abhishek Mishra</td>
+            <td>23</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>2100290140007</td>
+            <td>Achal Sharma</td>
+            <td>22</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>2100290140049</td>
+            <td>Ayush Tyagi</td>
+            <td>23</td>
+            <td>B</td>
+        </tr>
+    </table>
+    <h2 style="text-align: center;">
+        Working of <i>row span</i> in table
+    </h2>
+    <table>
+        <thead>Group Number : GB-13</thead>
+        <tr>
+            <th>Name</th>
+            <th>Project Name</th>
+        </tr>
+        <tr>
+            <td>Abhishek Mishra</td>
+            <td rowspan="3">Eshoppers-An E-Commerce Website</td>
+        </tr>
+        <tr>
+            <td>Achal Sharma</td>
+        </tr>
+        <tr>
+            <td>Ayush Tyagi</td>
+        </tr>
+    </table>
+
+    <h3>example -2</h3>
+    <table>
+        <thead>Group Number : G~B-14</thead>
+        <tr>
+            <th>Name</th>
+            <th>Project Name</th>
+        </tr>
+        <tr>
+            <td>Vinay Gupta</td>
+            <td rowspan="4">Placement Information System</td>
+        </tr>
+        <tr>
+            <td>Prashant Gupta</td>
+        </tr>
+        <tr>
+            <td>Nishant Sharma</td>
+        </tr>
+        <tr>
+            <td>Shubham Dubey</td>
+        </tr>
+    </table>
+
+    <h2 style="text-align: center;">
+        Working of <i>col span</i> in table
+    </h2>
+    <table>
+        <thead>Group Number : GB-13</thead>
+        <tr>
+            
+            <th colspan="2">Name</th>
+            <th >Contact Number</th>
+            <th>Project Name</th>
+        </tr>
+        <tr>
+            <td>Abhishek </td>
+            <td>Mishra </td>
+            <td>123456789</td>
+            <td rowspan="3">Eshoppers-An E-Commerce Website</td>
+        </tr>
+        <tr>
+            <td>Achal </td><td>Sharma</td>
+            <td>543219876</td>
+
+        </tr>
+        <tr>
+            <td>Ayush </td><td> Tyagi</td>
+            <td>987654321</td>
+        </tr>
+    </table>
+    
+
+
+</body>
+</html>
